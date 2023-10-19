@@ -1,0 +1,16 @@
+<div class="card">
+  <img class="card img" src="favicon.ico">
+  <div class="card textarea">
+      <span class="card title">{{ item.title }}</span>
+      <span class="card info">Производитель: {{item.manufacturer}}</span>
+    <p *ngIf="item.recipeOnly" class="card recipeTag">🛈 Рецептурный препарат</p>
+  </div>
+  <div class="card pricearea">
+    <span type="text">Цена: {{ item.cost }}₽</span>
+    <button class="card card-small" (click)="null" tabindex="0">
+    Купить
+  </button>
+  </div>
+
+</div>
+
