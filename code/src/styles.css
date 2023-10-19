@@ -1,0 +1,56 @@
+.h1 {
+  color: black;
+  font-size: 24px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word
+}
+
+.h2 {
+  color: black;
+  font-size: 36px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+.button-settings {
+  background: #61CAC4;
+  color: white;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+
+.search-settings {
+  color: #686965;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+.text-general {
+  color: black;
+  font-size: 24px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+.text-general-bold {
+  color: black;
+  font-size: 24px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word
+}
+
+.button {
+  border-radius: 30px;
+  border: 3px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
