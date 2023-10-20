@@ -12,8 +12,6 @@
   margin-right: 24px;
   height: 55px;
   width: 1873px;
-  display: flex;
-  flex-direction: row;
   background: transparent;
   color: white;
 }
@@ -26,8 +24,28 @@ p {
   border: none;
   width: 173px;
   height: 55px;
-  background: #f3f2f2;
+  background: #61cac4;
+  border-radius: 30px;
   margin-right: 143px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.main-icon.logo {
+  width: 50px;
+  height: 50px;
+  background: none;
+  margin-left: 23px;
+  margin-right: 0;
+}
+
+.main-icon.title {
+  width: auto;
+  background: none;
+  line-height: 50px;
+  margin-left: 9px;
+  font-size: 20px;
 }
 
 .search-icon
@@ -35,7 +53,7 @@ p {
   border: none;
   width: 45px;
   height: 45px;
-  background: #f3f2f2;
+  background: none;
   margin: 5px 30px 0 20px;
 }
 
@@ -54,8 +72,7 @@ p {
 .button {
   background-color: #61cac4;
   height: 55px;
-  justify-content: center;
-  line-height: 20px;
+  line-height: 50px;
   font-size: 20px;
   border-radius: 30px;
   margin-right: 21px;
@@ -81,12 +98,22 @@ p {
   width: 110px;
 }
 
+button.small-button
+{
+  width: 70px;
+  line-height: 0;
+}
+
+.button.icon{
+  height: auto;
+}
+
 .textarea
 {
   outline: none;
   border: none;
   width: 1006px;
-  height: 53px;
+  line-height: 50px;
   font-size: 20px;
   background: transparent;
   font-family: Futura;

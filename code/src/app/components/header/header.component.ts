@@ -1,4 +1,5 @@
 import {Component, Input} from "@angular/core";
+import {IUser} from "../../models/user";
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -6,5 +7,6 @@ import {Component, Input} from "@angular/core";
 })
 
 export class HeaderComponent {
+  @Input() user: IUser
   title = 'Header'
 }
