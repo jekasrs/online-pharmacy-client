@@ -1,5 +1,4 @@
 import {Component} from "@angular/core";
-import {filter} from "rxjs";
 
 @Component({
   selector: 'app-filter',

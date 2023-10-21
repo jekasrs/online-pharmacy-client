@@ -1,5 +1,5 @@
 :host {
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -12,8 +12,6 @@
   margin-right: 24px;
   height: 55px;
   width: 1873px;
-  display: flex;
-  flex-direction: row;
   background: transparent;
   color: white;
 }
@@ -61,7 +59,7 @@ p {
   margin-right: 21px;
   border: none;
   color: white;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
 }
 
 .button.search-button {
@@ -89,5 +87,5 @@ p {
   height: 53px;
   font-size: 20px;
   background: transparent;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
 }

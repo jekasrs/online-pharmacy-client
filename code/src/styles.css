@@ -1,12 +1,14 @@
-.h1 {
+/*Заголовки первого уровня*/
+h1 {
   color: black;
-  font-size: 24px;
+  font-size: 36px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   word-wrap: break-word
 }
 
-.h2 {
+/*Заголовки второго уровня*/
+h2 {
   color: black;
   font-size: 36px;
   font-family: Raleway, sans-serif;
@@ -14,32 +16,15 @@
   word-wrap: break-word
 }
 
-.button-settings {
-  background: #61CAC4;
-  color: white;
-  font-size: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 500;
-  word-wrap: break-word
-}
-
-
-.search-settings {
-  color: #686965;
-  font-size: 20px;
-  font-family: Raleway, sans-serif;
-  font-weight: 500;
-  word-wrap: break-word
-}
-
+/*Обычный текст*/
 .text-general {
-  color: black;
   font-size: 24px;
   font-family: Raleway, sans-serif;
   font-weight: 500;
   word-wrap: break-word
 }
 
+/*выделенный текст*/
 .text-general-bold {
   color: black;
   font-size: 24px;
@@ -48,9 +33,50 @@
   word-wrap: break-word
 }
 
-.button {
+/*Текст для кнопки*/
+.button-text {
+  background: #61CAC4;
+  color: white;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+/*Текст для поисковика*/
+.search-text {
+  color: #686965;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  word-wrap: break-word
+}
+
+/*Формы кнопки*/
+.button-clear {
+  border-radius: 30px;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  width: 250px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 500;
+  word-wrap: break-word;
+  border: 3px solid #61CAC4;
+  background: #FFFFFF;
+  color: #61CAC4;
+}
+
+.button-color {
   border-radius: 30px;
   border: 3px;
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
   text-align: center;
+  width: 250px;
+  height: 55px;
+  font-size: 20px;
+  font-weight: 500;
+  word-wrap: break-word;
+  background: #61CAC4;
+  color: #FFFFFF;
 }

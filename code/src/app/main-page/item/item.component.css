@@ -70,7 +70,7 @@ p {
   border: none;
   width: 240px;
   justify-content: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   flex-direction: column;
 }
 
@@ -80,7 +80,6 @@ p {
   height: 55px;
   width: 110px;
   justify-content: center;
-  margin-bottom: 0;
   line-height: 20px;
   font-size: 20px;
   align-items: center;

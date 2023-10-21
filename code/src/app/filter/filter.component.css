@@ -1,5 +1,5 @@
 :host {
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -9,11 +9,9 @@
   background: transparent;
   color: white;
 }
-
 p {
   margin: 0;
 }
-
 .content {
   background: transparent;
   margin-left: 340px;
@@ -31,5 +29,5 @@ p {
   margin-right: 76px;
   border: none;
   color: white;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
 }
