@@ -1,5 +1,5 @@
 :host {
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -12,8 +12,6 @@
   margin-right: 24px;
   height: 55px;
   width: 1873px;
-  display: flex;
-  flex-direction: row;
   background: transparent;
   color: white;
 }
@@ -24,14 +22,13 @@ p {
 
 .main-icon {
   border: none;
-  width: 173px;
-  height: 55px;
-  background: #f3f2f2;
+  width: auto;
+  height: auto;
+  background: #61CAC4;
   margin-right: 143px;
 }
 
-.search-icon
-{
+.search-icon {
   border: none;
   width: 45px;
   height: 45px;
@@ -39,8 +36,7 @@ p {
   margin: 5px 30px 0 20px;
 }
 
-.search-bar
-{
+.search-bar {
   height: 55px;
   width: 1106px;
   border-radius: 30px;
@@ -51,43 +47,47 @@ p {
   margin-right: 26px;
 }
 
-.button {
-  background-color: #61cac4;
-  height: 55px;
+/*.button {*/
+/*  background-color: #61cac4;*/
+/*  height: 55px;*/
+/*  justify-content: center;*/
+/*  line-height: 20px;*/
+/*  font-size: 20px;*/
+/*  border-radius: 30px;*/
+/*  margin-right: 21px;*/
+/*  border: none;*/
+/*  color: white;*/
+/*  font-family: Futura, sans-serif;*/
+/*}*/
+
+.button-color {
   justify-content: center;
-  line-height: 20px;
-  font-size: 20px;
-  border-radius: 30px;
   margin-right: 21px;
-  border: none;
-  color: white;
-  font-family: Futura;
 }
 
-.button.search-button {
+.button-color.search-button {
   width: 110px;
 }
 
-.button.auth-button {
+.button-color.auth-button {
   width: 110px;
   margin-right: 0;
 }
 
-.button.registration-button {
+.button-color.registration-button {
   width: 165px;
 }
 
-.button.recipe-button {
+.button-color.recipe-button {
   width: 110px;
 }
 
-.textarea
-{
+.textarea {
   outline: none;
   border: none;
   width: 1006px;
   height: 53px;
   font-size: 20px;
   background: transparent;
-  font-family: Futura;
+  font-family: Futura, sans-serif;
 }
