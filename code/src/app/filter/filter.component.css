@@ -18,16 +18,7 @@ p {
   display: flex;
   flex-direction: row;
 }
-.button {
-  background-color: #61cac4;
+.button-color {
   height: 55px;
   width: 187px;
-  justify-content: center;
-  line-height: 20px;
-  font-size: 20px;
-  border-radius: 30px;
-  margin-right: 76px;
-  border: none;
-  color: white;
-  font-family: Futura, sans-serif;
 }
