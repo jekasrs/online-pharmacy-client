@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {IOrder} from "../../models/order";
+import {IOrder} from "../../../models/order";
 
 @Component({
   selector: 'app-account-order-card',

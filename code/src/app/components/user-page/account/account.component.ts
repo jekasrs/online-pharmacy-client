@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {IOrder} from "../../models/order";
-import {orders as ordersdata} from "../../data/orders";
+import {IOrder} from "../../../models/order";
+import {orders as ordersdata} from "../../../data/orders";
 
 @Component({
   selector: 'app-account',
