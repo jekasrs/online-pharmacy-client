@@ -8,7 +8,7 @@ export const items: IItem[] = [
     recipeOnly: false,
     special: false,
     cost: 850.00,
-    image: ''
+    image: 'assets/pictures/order-success-img.png'
   },
 
   {

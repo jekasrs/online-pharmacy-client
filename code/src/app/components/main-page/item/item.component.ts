@@ -10,5 +10,4 @@ import {IItem} from "../../../models/item";
 export class ItemComponent {
   @Input() item: IItem
   title = 'ItemComponent'
-
 }

@@ -1,7 +1,4 @@
-import {Component, Input} from "@angular/core";
-import {filter} from "rxjs";
-import {IFilter} from "../../models/filter";
-import {IUser} from "../../models/user";
+import {Component} from "@angular/core";
 
 @Component({
   selector: 'app-filter',
@@ -10,6 +7,5 @@ import {IUser} from "../../models/user";
 })
 export class FilterComponent
 {
-  @Input() user: IUser
   title = 'Filter'
 }

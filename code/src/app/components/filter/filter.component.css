@@ -1,5 +1,5 @@
 :host {
-  font-family: Futura;
+  font-family: Futura, sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: row;
@@ -9,27 +9,16 @@
   background: transparent;
   color: white;
 }
-
 p {
   margin: 0;
 }
-
 .content {
   background: transparent;
   margin-left: 340px;
   display: flex;
   flex-direction: row;
 }
-.button {
-  background-color: #61cac4;
+.button-color {
   height: 55px;
   width: 187px;
-  justify-content: center;
-  line-height: 20px;
-  font-size: 20px;
-  border-radius: 30px;
-  margin-right: 76px;
-  border: none;
-  color: white;
-  font-family: Futura;
 }
