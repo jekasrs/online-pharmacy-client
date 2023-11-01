@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import {CardItemComponent} from "./product-page/card-item/card-item.component";
-import {FilterComponent} from "./filter/filter.component";
+import {ProductCardComponent} from "./components/product-card/product-card.component";
+import {FilterComponent} from "./components/filter/filter.component";
 
 @Component({
   selector: 'app-root',

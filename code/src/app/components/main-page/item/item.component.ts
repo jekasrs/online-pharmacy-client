@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {IItem} from "../../models/item";
+import {IItem} from "../../../models/item";
 
 @Component({
   selector: 'app-item',
@@ -10,5 +10,4 @@ import {IItem} from "../../models/item";
 export class ItemComponent {
   @Input() item: IItem
   title = 'ItemComponent'
-
 }

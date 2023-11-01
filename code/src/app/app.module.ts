@@ -3,22 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from './app.component';
-import {CardItemComponent} from "./product-page/card-item/card-item.component";
-import {FilterComponent} from "./filter/filter.component";
-import {HeaderComponent} from "./header/header.component";
-import { MainPageComponent } from './main-page/main-page.component';
-import { CartPageComponent } from './cart-page/cart-page.component';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { RegistrationPageComponent } from './registration-page/registration-page.component';
-import { UserPageComponent } from './user-page/user-page.component';
-import { PharmacistPageComponent } from './pharmacist-page/pharmacist-page.component';
+import {ProductCardComponent} from "./components/product-card/product-card.component";
+import {FilterComponent} from "./components/filter/filter.component";
+import {HeaderComponent} from "./components/header/header.component";
+import { MainPageComponent } from './components/main-page/main-page.component';
+import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { RegistrationPageComponent } from './components/registration-page/registration-page.component';
+import { UserPageComponent } from './components/user-page/user-page.component';
+import { PharmacistPageComponent } from './components/pharmacist-page/pharmacist-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent, CardItemComponent, FilterComponent,
+    AppComponent, ProductCardComponent, FilterComponent,
     HeaderComponent, MainPageComponent, CartPageComponent,
     LoginPageComponent, RegistrationPageComponent, UserPageComponent,
-    PharmacistPageComponent
+    PharmacistPageComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,
@@ -28,3 +29,4 @@ import { PharmacistPageComponent } from './pharmacist-page/pharmacist-page.compo
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
