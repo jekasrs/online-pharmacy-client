@@ -1,0 +1,24 @@
+:host {
+  font-family: Futura, sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  margin-top: 165px;
+  margin-bottom: 50px;
+  background: transparent;
+  color: white;
+}
+p {
+  margin: 0;
+}
+.content {
+  background: transparent;
+  margin-left: 340px;
+  display: flex;
+  flex-direction: row;
+}
+.button-color {
+  height: 55px;
+  width: 187px;
+}
