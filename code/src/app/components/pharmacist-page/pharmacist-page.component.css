@@ -4,30 +4,31 @@
 }
 
 .input-container {
-  border: 1px solid #ccc; /* Добавляем границу */
-  border-radius: 15px; /* Закругляем углы на 15px */
-  padding: 10px; /* Добавляем небольшие отступы вокруг элементов */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
   margin-bottom: 15px;
-  max-height: 100px; /* Максимальная высота .input-container */
-  overflow-x: auto; /* Добавляем вертикальную прокрутку при нехватке места */
+  max-height: 100px;
 }
 
-.input-container input {
-  width: 100%; /* Устанавливаем ширину input в 100% от родительского .input-container */
-  height: auto; /* Устанавливаем высоту в 100% для "невидимой" высоты */
-  border: none; /* Убираем границу у элементов input */
-  outline: none; /* Убираем рамку фокуса */
-  background-color: transparent; /* Убираем фон при обычном состоянии */
-  word-wrap: break-word; /* Разрыв слов, чтобы текст шел вниз */
+.input-container textarea {
+  width: 100%;
+  height: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  word-wrap: break-word;
+  overflow-x: scroll;
+  resize: none;
 }
 
-.input-container input:focus {
-  background-color: #FFFFFF; /* Изменяем цвет фона при фокусировке */
+.input-container textarea:focus {
+  background-color: #FFFFFF;
 }
 
 button {
-  width: 50%; /* Устанавливаем ширину кнопки в 100% от родительского .input-container */
-  border: none; /* Убираем границу у кнопки */
+  width: 50%;
+  border: none;
 }
 
 .search-text {
@@ -52,5 +53,5 @@ button {
 }
 
 .tall-container {
-  height: 600px ; /* Высота, равная высоте трех обычных контейнеров */
+  height: 600px;
 }
