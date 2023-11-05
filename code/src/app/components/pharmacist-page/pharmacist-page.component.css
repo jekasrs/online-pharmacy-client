@@ -6,7 +6,7 @@
   align-items: flex-start;
 }
 
-.right-panel {
+.form-editor__right {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,7 +17,7 @@
 }
 
 /* Стили для формы и её элементов */
-.form-container {
+.form-editor__left {
   margin: 10px 100px 10px 10px;
   width: 800px;
 }
@@ -122,7 +122,7 @@ button {
   font-size: 18px;
 }
 
-.upload-image {
+.wrapper-upload-image {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -130,12 +130,12 @@ button {
   flex-direction: column;
 }
 
-.custom-input {
+.upload-image {
   display: inline-block;
   width: auto;
 }
 
-.custom-square {
+.upload-image__img {
   width: 100px;
   height: 100px;
   background-color: #F3F2F2;
@@ -158,7 +158,7 @@ button {
   height: 0;
 }
 
-.specialization__list--full {
+.specialization__list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -166,7 +166,7 @@ button {
   margin-top: 10px;
 }
 
-.specialization__list--full__item {
+.specialization__list__item {
   list-style-type: none;
   margin-left: -35px;
   border: 1px solid #ccc;
@@ -184,7 +184,7 @@ button {
   margin-bottom: 8px;
 }
 
-.specialisation-div {
+.specialisation {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -192,7 +192,7 @@ button {
   align-items: center;
 }
 
-.main-choose {
+.specialisation__choice {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,10 +202,10 @@ button {
   border-radius: 15px;
 }
 
-.choosen-specialisation {
+.specialisation-selected {
   margin-left: 8px;
 }
 
-.info-text {
+.upload-image__text {
   margin-top: 5px;
 }
