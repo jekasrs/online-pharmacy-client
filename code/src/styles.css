@@ -18,6 +18,7 @@ h2 {
 
 /*Обычный текст*/
 .text-general {
+  color: #7A7A7A;
   font-size: 24px;
   font-family: Raleway, sans-serif;
   font-weight: 500;
@@ -40,6 +41,14 @@ h2 {
   font-family: Raleway, sans-serif;
   font-weight: 500;
   word-wrap: break-word
+}
+
+.button-color:hover {
+  cursor: pointer;
+}
+
+.button-clear:hover {
+  cursor: pointer;
 }
 
 /*Формы кнопки*/
