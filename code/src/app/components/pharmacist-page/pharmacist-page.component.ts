@@ -6,5 +6,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./pharmacist-page.component.css']
 })
 export class PharmacistPageComponent {
+  isListHidden = false;
+  isSpecialisationOn = false;
+  isReceipt = false;
+  selectedSpecialization = "";
 
+  specializations = ['Специализация 1', 'Специализация 2', 'Специализация 3'];
+
+  constructor() {
+    this.selectedSpecialization = this.specializations[0];
+  }
+
+  toggleList() {
+    this.isListHidden = !this.isListHidden;
+  }
+
+  setSpecialisation() {
+    this.isSpecialisationOn = !this.isSpecialisationOn;
+  }
+
+  setReceipt() {
+    this.isReceipt = !this.isReceipt;
+  }
+
+  handleSpecializationClick(specialization: string) {
+    this.selectedSpecialization = specialization;
+    this.toggleList();
+  }
 }

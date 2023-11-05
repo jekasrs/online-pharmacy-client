@@ -1,4 +1,5 @@
-<div class="form-container">
+<div class="form-editor">
+  <div class="form-container">
   <div class="input-container">
     <label class="search-text" for="name">Наименование</label><br>
     <textarea id="name" placeholder="Введите наименование"></textarea>
@@ -26,4 +27,35 @@
     <textarea id="ingredients" placeholder="Введите действующие вещества"></textarea>
   </div>
   <button class="button-color">Добавить товар</button>
+  </div>
+  <div class="right-panel">
+    <div class="checkbox-option">
+      <input type="checkbox" class="custom-checkbox" id="checkbox1" (click)="setReceipt()"/>
+      <label for="checkbox1" class="text-general">По рецепту</label>
+    </div>
+    <div class="checkbox-option">
+      <input type="checkbox" class="custom-checkbox" id="checkbox2" (click)="setSpecialisation()">
+      <label for="checkbox2" class="text-general">Специальный</label>
+    </div>
+    <div class="specialisation-div" *ngIf="isSpecialisationOn">
+      <div class="main-choose">
+        <div class="text-general choosen-specialisation">{{selectedSpecialization}}</div>
+        <img src="assets/pictures/arrow-up.png" (click)="toggleList()">
+      </div>
+      <ul class="specialization__list--full" *ngIf="isListHidden">
+          <li class="specialization__list--full__item" *ngFor="let specialization of specializations" >
+            <div class="list-item" (click)="handleSpecializationClick(specialization)" >{{ specialization }}</div>
+          </li>
+        </ul>
+    </div>
+    <div class="upload-image">
+      <div class="custom-input">
+        <div class="custom-square">
+          <img class="input-image" src="assets/pictures/cross.png">
+          <input type="file" id="image-upload">
+        </div>
+        <label class="search-text info-text" for="image-upload">Размер изображения не превышает 5 Мб</label>
+      </div>
+    </div>
+  </div>
 </div>
