@@ -1,0 +1,56 @@
+.form-container {
+  margin: 10px 310px 10px 10px;
+  width: 1100px;
+}
+
+.input-container {
+  border: 1px solid #ccc; /* Добавляем границу */
+  border-radius: 15px; /* Закругляем углы на 15px */
+  padding: 10px; /* Добавляем небольшие отступы вокруг элементов */
+  margin-bottom: 15px;
+  max-height: 100px; /* Максимальная высота .input-container */
+  overflow-x: auto; /* Добавляем вертикальную прокрутку при нехватке места */
+}
+
+.input-container input {
+  width: 100%; /* Устанавливаем ширину input в 100% от родительского .input-container */
+  height: auto; /* Устанавливаем высоту в 100% для "невидимой" высоты */
+  border: none; /* Убираем границу у элементов input */
+  outline: none; /* Убираем рамку фокуса */
+  background-color: transparent; /* Убираем фон при обычном состоянии */
+  word-wrap: break-word; /* Разрыв слов, чтобы текст шел вниз */
+}
+
+.input-container input:focus {
+  background-color: #FFFFFF; /* Изменяем цвет фона при фокусировке */
+}
+
+button {
+  width: 50%; /* Устанавливаем ширину кнопки в 100% от родительского .input-container */
+  border: none; /* Убираем границу у кнопки */
+}
+
+.search-text {
+  font-size: 16px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: calc(50% - 5px);
+}
+
+.right-margin {
+  margin-right: 5px;
+}
+
+.left-margin {
+  margin-left: 5px;
+}
+
+.tall-container {
+  height: 600px ; /* Высота, равная высоте трех обычных контейнеров */
+}
