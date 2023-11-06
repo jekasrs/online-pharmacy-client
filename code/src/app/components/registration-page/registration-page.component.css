@@ -1,0 +1,40 @@
+.registration-page {
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  height: 1000px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  position: relative;
+  padding: 50px 60px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 80px;
+  background: white;
+  border-radius: 20px;
+  border: 3px #D9D9D9 solid;
+  margin-left: 160px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.input-container input {
+  margin-left: 22px;
+  font-size: 24px;
+  color: black;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  word-wrap: break-word;
+  overflow-x: scroll;
+  resize: none;
+}
+
+.input-container label {
+  margin-top: 5px;
+  margin-left: 20px;
+}
