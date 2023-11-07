@@ -1,19 +1,9 @@
-:host {
-  font-family: Futura, sans-serif;
-  font-size: 20px;
+.search-wrapper {
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-top: 60px;
-  margin-left: 24px;
-  margin-right: 24px;
-  height: 55px;
-  width: 1873px;
-  background: transparent;
-  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -21,6 +11,7 @@ p {
 }
 
 .main-icon {
+<<<<<<< HEAD
   border: none;
   width: 173px;
   height: 55px;
@@ -46,10 +37,14 @@ p {
   line-height: 50px;
   margin-left: 9px;
   font-size: 20px;
+=======
+  width: auto;
+  height: auto;
+  margin-right: 2px;
+>>>>>>> origin/main-page
 }
 
 .search-icon {
-  border: none;
   width: 45px;
   height: 45px;
   background: none;
@@ -125,4 +120,22 @@ button.small-button
   font-size: 20px;
   background: transparent;
   font-family: Futura, sans-serif;
+}
+
+.logo {
+  width: 150px;
+}
+
+.wrapper-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  border-radius: 30px;
+  margin-right: 20px;
+  border: 3px;
+  font-family: Futura, sans-serif;
+  background: #61CAC4;
+  color: #FFFFFF;
 }
