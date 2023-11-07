@@ -14,5 +14,11 @@ export class FilterComponent
   selectFilter(filter: string)
   {
     this.selectedFilter = filter;
+    this.changeColor()
+  }
+
+  changeColor()
+  {
+    // Здесь будет код для изменения цвета кнопки по нажатию
   }
 }
