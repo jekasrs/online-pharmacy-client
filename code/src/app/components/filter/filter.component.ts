@@ -8,4 +8,11 @@ import {Component} from "@angular/core";
 export class FilterComponent
 {
   title = 'Filter'
+  selectedFilter = '';
+  filters = ['Без рецепта', 'По рецепту', 'Специальные'];
+
+  selectFilter(filter: string)
+  {
+    this.selectedFilter = filter;
+  }
 }

@@ -1,7 +1,7 @@
 <div class="content">
-  <button class="button-color">Без рецепта</button>
-  <button class="button-color">По рецепту</button>
+  <button class="button-color" (click)="selectFilter(filters[0])">{{ filters[0] }}</button>
+  <button class="button-color" (click)="selectFilter(filters[1])">{{ filters[1] }}</button>
 <!--  <p *ngIf="user.isAdmin||user.isDoctor">-->
-    <button class="button-color">Специальные</button>
+  <button class="button-color" (click)="selectFilter(filters[2])">{{ filters[2] }}</button>
 <!--  </p>-->
 </div>
