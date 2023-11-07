@@ -6,9 +6,9 @@
   </div>
   <div class="card pricearea">
     <div class="card pricearea quatity">
-      <div class="card card-small">–</div>
-      <span class="text quatity" >1</span>
-      <div class="card card-small">+</div>
+      <button class="card card-small" (click)="decreaseQuantity()">–</button>
+      <span class="text quatity" >{{ quantity }}</span>
+      <button class="card card-small" (click)="increaseQuantity()">+</button>
     </div>
     <div class="text price">1000₽</div>
   </div>
