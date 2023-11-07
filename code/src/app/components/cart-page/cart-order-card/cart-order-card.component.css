@@ -74,9 +74,5 @@ label:before {
 input:checked + label:before {
   content: '\2716';
   color: #61CAC4;
+  line-height: 25px;
 }
-
-input:disabled + label:before {
-}
-
-
