@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {items} from "../../data/items";
 
 @Component({
   selector: 'app-cart',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent {
-
+  protected readonly items = items;
 }

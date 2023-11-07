@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {IItem} from "../../../models/item";
 
 @Component({
   selector: 'app-cart-item-card',
@@ -8,6 +9,8 @@ import { Component } from '@angular/core';
 export class CartItemCardComponent {
   title: 'cart-item-card'
   quantity: number = 1
+  cost: number
+  @Input() item: IItem
 
   increaseQuantity()
   {
@@ -20,5 +23,10 @@ export class CartItemCardComponent {
     {
       this.quantity--;
     }
+  }
+
+  calculateCost(itemCost: number, itemQuantity: number)
+  {
+    return itemCost * itemQuantity;
   }
 }
