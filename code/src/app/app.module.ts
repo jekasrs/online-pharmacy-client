@@ -15,6 +15,9 @@ import { PharmacistPageComponent } from './components/pharmacist-page/pharmacist
 import { ItemComponent } from "./components/main-page/item/item.component";
 import { CartItemCardComponent } from "./components/cart-page/cart-item-card/cart-item-card.component";
 import { CartOrderCardComponent } from "./components/cart-page/cart-order-card/cart-order-card.component";
+import {AccountComponent} from "./components/user-page/account/account.component";
+import {AccountOrderCardComponent} from "./components/user-page/account-order-card/account-order-card.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,11 +25,12 @@ import { CartOrderCardComponent } from "./components/cart-page/cart-order-card/c
     HeaderComponent, MainPageComponent, CartComponent,
     LoginPageComponent, RegistrationPageComponent, UserPageComponent,
     PharmacistPageComponent,ItemComponent,
-    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent
+    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent, AccountComponent, AccountOrderCardComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

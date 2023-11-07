@@ -6,15 +6,14 @@
 </div>
 <div class="search-bar">
   <img class="search-icon" alt="search-icon" src="../assets/buttons/search-logo.png"/>
-
   <form action="/search">
     <input placeholder="Поиск по названию препарата, например Витамин D"
-           type="text" name="text" autocapitalize="off" autocomplete="off"
+           type="text" [(ngModel)]="searchRequest" autocapitalize="off" autocomplete="off"
            autocorrect="off" spellcheck="false" maxlength="255" class="textarea">
   </form>
 </div>
 
-<button class="button-color search-button" (click)="null" tabindex="0">Искать</button>
+<button class="button-color search-button" (click)="showItems()" tabindex="0">Искать</button>
 
 <!--Неавторизированный пользователь-->
 <!--<button class="button-color registration-button" (click)="null" tabindex="0">Регистрация</button>-->
