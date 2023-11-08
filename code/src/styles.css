@@ -69,4 +69,11 @@ h2 {
   word-wrap: break-word;
   background: #61CAC4;
   color: #FFFFFF;
+  cursor: pointer;
 }
+
+.button-clear:active{
+  top: 2px;
+  background: #686965;
+}
+
