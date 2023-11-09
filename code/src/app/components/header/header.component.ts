@@ -11,8 +11,7 @@ export class HeaderComponent {
   title = 'Header'
   searchRequest: string = ''
 
-  showItems()
-  {
+  showItems() {
     return this.searchRequest;
   }
 }

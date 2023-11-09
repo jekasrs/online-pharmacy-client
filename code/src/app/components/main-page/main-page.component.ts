@@ -10,4 +10,3 @@ export class MainPageComponent {
 
     protected readonly items = items;
 }
-

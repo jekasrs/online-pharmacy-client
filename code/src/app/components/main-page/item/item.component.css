@@ -16,8 +16,7 @@ p {
   font-family: Futura;
 }
 
-.card.textarea
-{
+.card.textarea {
   border: none;
   padding: 0;
   flex-direction: column;
@@ -26,8 +25,7 @@ p {
   width: 680px;
 }
 
-.card.title
-{
+.card.title {
   padding: 0;
   border: none;
   height: auto;
@@ -36,8 +34,7 @@ p {
   margin-left: 0;
 }
 
-.card.info
-{
+.card.info {
   padding: 0;
   border: none;
   height: 28px;
@@ -47,8 +44,7 @@ p {
   font-size: 20px;
 }
 
-.card.img
-{
+.card.img {
   height: 230px;
   width: 230px;
   border: none;
@@ -59,8 +55,7 @@ p {
   margin-left: 0;
 }
 
-.card.recipeTag
-{
+.card.recipeTag {
   padding: 0;
   border: none;
   height: 28px;
@@ -70,18 +65,17 @@ p {
   font-size: 20px;
 }
 
-.card.pricearea
-{
+.card.pricearea {
   padding: 0;
   border: none;
   width: 240px;
   justify-content: center;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-left: 0;
   flex-direction: column;
 }
 
-.card.card-small {
+.card.buy-button {
   border-radius: 30px;
   border: none;
   height: 55px;
@@ -95,3 +89,31 @@ p {
   margin: 10px 0;
 }
 
+.card.pricearea.quatity {
+  flex-direction: row;
+  margin-bottom: 24px;
+  align-content: center;
+  height: 50px;
+}
+
+.card.card-small {
+  border-radius: 15px;
+  border: 3px solid #61CAC4;
+  padding: 0;
+  margin: 0 0;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  line-height: 50px;
+  font-size: 20px;
+  background: transparent;
+  color: #61CAC4;
+}
+
+.text.quatity {
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  text-align: center;
+}
