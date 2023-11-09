@@ -15,8 +15,7 @@ export class CartOrderCardComponent {
   data: IItemQuantuty[]
   price: number = 0
 
-  calculatePrice()
-  {
+  calculatePrice() {
     this.data = this.order.items;
     this.price = 0;
     for (let i = 0; i < this.data.length; i++)
@@ -25,8 +24,7 @@ export class CartOrderCardComponent {
     }
     return this.price.toString();
   }
-  createOrder()
-  {
+  createOrder() {
     // предполагается, что данные мы будем генерировать,
     // и их них будет создаваться новый IOrder, который идёт дальше
     // сейчас они берутся из шаблона

@@ -8,7 +8,7 @@
   color: white;
 }
 
-.title{
+.title {
   margin-top: 270px;
   margin-left: 182px;
   font-size: 44px;
@@ -16,7 +16,7 @@
   font-family: Futura;
 }
 
-.content{
+.content {
   width: 1240px;
   margin-left: 340px;
   /*margin-top: 375px;*/
@@ -26,7 +26,7 @@
   border: none;
 }
 
-.card-container{
+.card-container {
   width: 820px;
   display: flex;
   flex-direction: column;
@@ -35,10 +35,7 @@
   margin-right: 35px;
 }
 
-
-
-
-.spacer{
+.spacer {
   height: 60px;
 }
 

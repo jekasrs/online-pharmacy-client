@@ -11,8 +11,7 @@
   font-family: Futura;
 }
 
-.card.textarea
-{
+.card.textarea {
   border: none;
   padding: 0;
   flex-direction: column;
@@ -21,24 +20,22 @@
   height: 230px;
 }
 
-.text{
+.text {
   font-size: 20px;
   width: 321px;
   border: none;
 }
 
-.text.info
-{
+.text.info {
   height: 200px;
   margin-bottom: 6px;
 }
 
-.text.delete{
+.text.delete {
   height: 24px;
 }
 
-.card.img
-{
+.card.img {
   height: 230px;
   width: 230px;
   border: none;
@@ -49,8 +46,7 @@
   margin-left: 0;
 }
 
-.card.pricearea
-{
+.card.pricearea {
   padding: 0;
   border: none;
   width: 181px;
@@ -59,7 +55,7 @@
   flex-direction: column;
 }
 
-.card.pricearea.quatity{
+.card.pricearea.quatity {
   flex-direction: row;
   margin-bottom: 24px;
   align-content: center;
@@ -80,7 +76,7 @@
   color: #61CAC4;
 }
 
-.text.quatity{
+.text.quatity {
   width: 60px;
   height: 50px;
   line-height: 50px;
@@ -88,7 +84,7 @@
   text-align: center;
 }
 
-.text.price{
+.text.price {
   width: 100px;
   height: 24px;
   text-align: center;

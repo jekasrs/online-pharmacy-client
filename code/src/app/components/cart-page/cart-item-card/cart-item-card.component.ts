@@ -19,30 +19,25 @@ export class CartItemCardComponent {
   //   // представим, что в items все по-порядку
   //   this.item = items[this.itemQuantuty.itemId]
   // }
-  getTitle()
-  {
+  getTitle() {
     this.quantity = this.itemQuantuty.itemQuantity
     this.item = items[this.itemQuantuty.itemId];
     return this.item.title
   }
 
-  increaseQuantity()
-  {
+  increaseQuantity() {
     this.quantity++;
     this.itemQuantuty.itemQuantity = this.quantity
   }
 
-  decreaseQuantity()
-  {
-    if (this.quantity != 1)
-    {
+  decreaseQuantity() {
+    if (this.quantity != 1) {
       this.quantity--;
       this.itemQuantuty.itemQuantity = this.quantity
     }
   }
 
-  calculateCost()
-  {
+  calculateCost() {
     return this.cost = this.item.cost * this.quantity;
   }
 }
