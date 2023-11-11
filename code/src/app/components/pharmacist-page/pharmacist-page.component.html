@@ -40,7 +40,7 @@
     <div class="specialisation" *ngIf="isSpecialisationOn">
       <div class="specialisation__choice">
         <div class="text-general specialisation-selected">{{selectedSpecialization}}</div>
-        <img src="assets/pictures/arrow-up.png" (click)="toggleList()">
+        <img class="img-arrow" src="assets/pictures/arrow-up.png" (click)="toggleList()">
       </div>
       <ul class="specialization__list" *ngIf="isListHidden">
           <li class="specialization__list__item" *ngFor="let specialization of specializations" >
@@ -54,7 +54,7 @@
           <img class="input-image" src="assets/pictures/cross.png">
           <input type="file" id="image-upload">
         </div>
-        <label class="search-text upload-image__text" for="image-upload">Размер изображения не превышает 5 Мб</label>
+        <strong class="search-text upload-image__text" >Размер изображения не превышает 5 Мб</strong>
       </div>
     </div>
   </div>
