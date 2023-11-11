@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {items} from "../../data/items";
 
 @Component({
   selector: 'app-main-page',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent {
 
+    protected readonly items = items;
 }
