@@ -10,7 +10,7 @@
       <div class="product-card__main__info__text">
         <div class="text-general">Производитель: {{item.manufacturer}}</div>
         <div class="recipe-info">
-          <img src="../../../assets/buttons/search-logo.png" [hidden]="!item.recipeOnly">
+          <img src="assets/buttons/search-logo.png" [hidden]="!item.recipeOnly">
           <div  class="text-general" [hidden]="!item.recipeOnly">Рецептурный препарат</div>
         </div>
       </div>
@@ -24,7 +24,7 @@
     </div>
     <div class="pharmacies" *ngIf="showPharmaciesFlag">
       <div class="pharmacies__close-form" (click)="showPharmacies()">
-        <img id="pharmacies__close-form__button" src="../../../assets/buttons/close.png">
+        <img id="pharmacies__close-form__button" src="assets/buttons/close.png">
       </div>
       <ul class="pharmacies__list--full" *ngIf="myPharmacies.length > 0; else noProductsMessage">
         <li class="pharmacies__list--full__item" *ngFor="let pharmacy of myPharmacies">

@@ -72,7 +72,7 @@
 .buy-form {
   width: 370px;
   height: 310px;
-  font-family: Raleway, sans-serif;
+  font-family: Futura, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -93,7 +93,7 @@
 .pharmacies {
   width: 470px;
   height: 310px;
-  font-family: Raleway, sans-serif;
+  font-family: Futura, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -139,7 +139,7 @@
 
 .list-item {
   font-size: 24px;
-  font-family: Raleway, sans-serif;
+  font-family: Futura, sans-serif;
   font-weight: 500;
   word-wrap: break-word;
   margin-bottom: 0.5em;
