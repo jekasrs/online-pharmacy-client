@@ -30,7 +30,6 @@
   margin-bottom: 20px;
   max-height: 80px;
   width: 100%;
-
 }
 
 .input-container textarea {
@@ -47,7 +46,6 @@
   color: black;
   font-size: 18px;
   font-weight: 500;
-  margin-top: -5px;
 }
 
 .input-container textarea:focus {
