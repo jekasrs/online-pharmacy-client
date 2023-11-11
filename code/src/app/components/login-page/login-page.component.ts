@@ -1,8 +1,4 @@
-import {Component, Input} from '@angular/core';
-import {IItem} from "../../models/item";
-import {IPharmacy} from "../../models/pharmacy";
-import {items} from "../../data/items";
-import {pharmacies} from "../../data/pharmacies";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-login-page',
@@ -10,17 +6,4 @@ import {pharmacies} from "../../data/pharmacies";
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
-  @Input() item: IItem
-  @Input() myPharmacies: IPharmacy[]
-  showPharmaciesFlag: boolean = false;
-
-  constructor() {
-    this.item = items[0]
-    this.myPharmacies = pharmacies
-  }
-
-  showPharmacies() {
-    this.showPharmaciesFlag = !this.showPharmaciesFlag;
-  }
-
 }
