@@ -9,6 +9,10 @@
   padding: 50px 60px;
 }
 
+.registration-page-h1{
+  margin: 30px 0 0;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
@@ -20,6 +24,10 @@
   margin-left: 160px;
   margin-top: 5px;
   margin-bottom: 35px;
+}
+
+.input-container-margin{
+  margin-top: 50px
 }
 
 .input-container input {
@@ -37,4 +45,13 @@
 .input-container label {
   margin-top: 5px;
   margin-left: 20px;
+}
+
+.button-padding {
+  padding-left: 160px
+}
+
+.button-sizes {
+  width: 318px;
+  height: 63px
 }
