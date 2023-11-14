@@ -11,6 +11,31 @@ p {
 }
 
 .main-icon {
+  border: none;
+  width: 173px;
+  height: 55px;
+  background: #61cac4;
+  border-radius: 30px;
+  margin-right: 143px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.main-icon.logo {
+  width: 50px;
+  height: 50px;
+  background: none;
+  margin-left: 23px;
+  margin-right: 0;
+}
+
+.main-icon.title {
+  width: auto;
+  background: none;
+  line-height: 50px;
+  margin-left: 9px;
+  font-size: 20px;
   width: auto;
   height: auto;
   margin-right: 2px;
@@ -19,6 +44,7 @@ p {
 .search-icon {
   width: 45px;
   height: 45px;
+  background: none;
   margin: 5px 30px 0 20px;
 }
 
@@ -31,6 +57,24 @@ p {
   flex-direction: row;
   background: transparent;
   margin-right: 26px;
+}
+
+.spacer
+{
+  background: none;
+  width: 98px;
+}
+
+.button {
+  background-color: #61cac4;
+  height: 55px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-right: 21px;
+  border: none;
+  color: white;
+  font-family: Futura;
 }
 
 .button-color {
@@ -55,11 +99,21 @@ p {
   width: 110px;
 }
 
+button.small-button
+{
+  width: 70px;
+  line-height: 0;
+}
+
+.button.icon{
+  height: auto;
+}
+
 .textarea {
   outline: none;
   border: none;
   width: 1006px;
-  height: 53px;
+  line-height: 50px;
   font-size: 20px;
   background: transparent;
   font-family: Futura, sans-serif;
