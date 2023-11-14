@@ -1,0 +1,61 @@
+<div class="form-editor">
+  <div class="form-editor__left">
+  <div class="input-container">
+    <label class="search-text" for="name">Наименование</label><br>
+    <textarea id="name" placeholder="Введите наименование"></textarea>
+  </div>
+  <div class="flex-container">
+    <div class="input-container half-width right-margin">
+      <label class="search-text" for="manufacturer">Изготовитель</label><br>
+      <textarea id="manufacturer" placeholder="Введите изготовителя"></textarea>
+    </div>
+    <div class="input-container half-width left-margin">
+      <label class="search-text" for="price">Цена</label><br>
+      <textarea id="price" placeholder="Введите цену"></textarea>
+    </div>
+  </div>
+  <div class="input-container tall-container">
+    <label class="search-text" for="usage">Способ применения</label><br>
+    <textarea id="usage" placeholder="Введите способ применения"></textarea>
+  </div>
+  <div class="input-container tall-container">
+    <label class="search-text" for="dosage">Дозировка</label><br>
+    <textarea id="dosage" placeholder="Введите дозировку"></textarea>
+  </div>
+  <div class="input-container tall-container">
+    <label class="search-text" for="ingredients">Действующие вещества</label><br>
+    <textarea id="ingredients" placeholder="Введите действующие вещества"></textarea>
+  </div>
+  <button class="button-color">Добавить товар</button>
+  </div>
+  <div class="form-editor__right">
+    <div class="checkbox-option">
+      <input type="checkbox" class="custom-checkbox" id="checkbox-receipt" (click)="setReceipt()"/>
+      <label for="checkbox-receipt" class="text-general">По рецепту</label>
+    </div>
+    <div class="checkbox-option">
+      <input type="checkbox" class="custom-checkbox" id="checkbox-spec" (click)="setSpecialisation()">
+      <label for="checkbox-spec" class="text-general">Специальный</label>
+    </div>
+    <div class="specialisation" *ngIf="isSpecialisationOn">
+      <div class="specialisation__choice">
+        <div class="text-general specialisation-selected">{{selectedSpecialization}}</div>
+        <img class="img-arrow" src="assets/pictures/arrow-up.png" (click)="toggleList()">
+      </div>
+      <ul class="specialization__list" *ngIf="isListHidden">
+          <li class="specialization__list__item" *ngFor="let specialization of specializations" >
+            <div class="list-item" (click)="handleSpecializationClick(specialization)" >{{ specialization }}</div>
+          </li>
+        </ul>
+    </div>
+    <div class="wrapper-upload-image">
+      <div class="upload-image">
+        <div class="upload-image__img">
+          <img class="input-image" src="assets/pictures/cross.png">
+          <input type="file" id="image-upload">
+        </div>
+        <strong class="search-text upload-image__text" >Размер изображения не превышает 5 Мб</strong>
+      </div>
+    </div>
+  </div>
+</div>

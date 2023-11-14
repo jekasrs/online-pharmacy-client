@@ -9,4 +9,9 @@ import {IUser} from "../../models/user";
 export class HeaderComponent {
   @Input() user: IUser
   title = 'Header'
+  searchRequest: string = ''
+
+  showItems() {
+    return this.searchRequest;
+  }
 }
