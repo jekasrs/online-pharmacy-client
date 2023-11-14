@@ -1,7 +1,7 @@
 /*Заголовки первого уровня*/
 h1 {
   color: black;
-  font-size: 36px;
+  font-size: 44px;
   font-family: Futura, sans-serif;
   font-weight: 700;
   word-wrap: break-word
@@ -18,7 +18,7 @@ h2 {
 
 /*Обычный текст*/
 .text-general {
-  color: #7A7A7A;
+  color: #686965;
   font-size: 24px;
   font-family: Futura, sans-serif;
   font-weight: 500;
