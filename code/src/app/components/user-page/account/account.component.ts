@@ -10,5 +10,4 @@ import {orders as ordersdata} from "../../../data/orders";
 export class AccountComponent {
   title = 'Account'
   orders: IOrder[] = ordersdata
-
 }
