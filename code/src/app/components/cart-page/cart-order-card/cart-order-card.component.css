@@ -1,4 +1,4 @@
-.card-order{
+.card-order {
   width: 313px;
   height: 259px;
   padding: 36px;
@@ -8,42 +8,42 @@
   flex-direction: column;
 }
 
-.text{
+.text {
   font-family: Futura, sans-serif;
   font-size: 20px;
   line-height: normal;
 }
 
-.text.tag{
+.text.tag {
   width: 150px;
   margin-right: 50px;
   font-family: Futura-Bold;
 }
 
-.text.price{
+.text.price {
   width: 113px;
   text-align: right;
 }
 
-.text.title{
+.text.title {
   font-size: 36px;
   margin-bottom: 23px;
 }
 
-.text.line{
+.text.line {
   width: 313px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
 }
 
-.text.buttons{
+.text.buttons {
   width: 313px;
   display: flex;
   justify-content: center;
 }
 
-form{
+form {
   display: flex;
 }
 
@@ -74,9 +74,5 @@ label:before {
 input:checked + label:before {
   content: '\2716';
   color: #61CAC4;
+  line-height: 25px;
 }
-
-input:disabled + label:before {
-}
-
-

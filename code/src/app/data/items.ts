@@ -13,8 +13,8 @@ export const items: IItem[] = [
 
   {
     id: 1,
-    title: 'Аквалор софт duo 150 мл душ/струя',
-    manufacturer: 'Швеция',
+    title: 'Аквалор софт duo 250 мл душ/струя',
+    manufacturer: 'Болгария',
     recipeOnly: true,
     special: false,
     cost: 850.00,
