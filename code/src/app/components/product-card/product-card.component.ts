@@ -23,4 +23,7 @@ export class ProductCardComponent {
     this.showPharmaciesFlag = !this.showPharmaciesFlag;
   }
 
+  addItemToCart() {
+    return this.item
+  }
 }

@@ -1,0 +1,44 @@
+.host
+{
+  font-family: Futura;
+  display: flex;
+  flex-direction: column;
+  margin-top: 270px;
+  background: transparent;
+  color: white;
+}
+
+.title{
+  margin-top: 270px;
+  margin-left: 182px;
+  font-size: 44px;
+  margin-bottom: 54px;
+  font-family: Futura;
+}
+
+.content{
+  width: 1240px;
+  margin-left: 340px;
+  /*margin-top: 375px;*/
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border: none;
+}
+
+.card-container{
+  width: 820px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: none;
+  margin-right: 35px;
+}
+
+
+
+
+.spacer{
+  height: 60px;
+}
+
