@@ -6,7 +6,7 @@ import {items} from "../../data/items";
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class MainPageComponent {
 
+export class MainPageComponent {
     protected readonly items = items;
 }
