@@ -15,14 +15,16 @@ import { CartOrderCardComponent } from "./components/cart-page/cart-order-card/c
 import { MainPageComponent} from "./components/main-page/main-page.component";
 import { FormsModule } from "@angular/forms";
 import { ItemComponent } from "./components/main-page/item/item.component";
+import { AccountComponent } from "./components/user-page/account/account.component";
+import {AccountOrderCardComponent} from "./components/user-page/account-order-card/account-order-card.component";
 
 @NgModule({
   declarations: [
     AppComponent, ProductCardComponent, FilterComponent,
-    HeaderComponent, CartComponent,
+    HeaderComponent, CartComponent, AccountComponent,
     LoginPageComponent, MainPageComponent,
     PharmacistPageComponent, ItemComponent, RegistrationPageComponent,
-    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent
+    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent, AccountOrderCardComponent
   ],
   imports: [
     BrowserModule,

@@ -10,13 +10,13 @@ import {IPharmacy} from "../../models/pharmacy";
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent {
-  @Input() item: IItem
+  @Input() item: IItem;
   @Input() myPharmacies: IPharmacy[]
   showPharmaciesFlag: boolean = false;
 
   constructor() {
-    this.item = items[0]
-    this.myPharmacies = pharmacies
+    this.item = items[0];
+    this.myPharmacies = pharmacies;
   }
 
   showPharmacies() {
