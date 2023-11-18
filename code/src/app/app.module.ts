@@ -17,6 +17,7 @@ import { FormsModule } from "@angular/forms";
 import { ItemComponent } from "./components/main-page/item/item.component";
 import { AccountComponent } from "./components/user-page/account/account.component";
 import {AccountOrderCardComponent} from "./components/user-page/account-order-card/account-order-card.component";
+import { AppRoutingModule } from './routes/routes';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {AccountOrderCardComponent} from "./components/user-page/account-order-ca
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRoutingModule,
     FormsModule
   ],
   providers: [],
