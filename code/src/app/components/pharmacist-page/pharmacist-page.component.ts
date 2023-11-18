@@ -9,9 +9,28 @@ export class PharmacistPageComponent {
   isListHidden = false;
   isSpecialisationOn = false;
   isReceipt = false;
+
+
+
+  isValidName: boolean = true;
+  isValidManufacturer: boolean = true;
+  isValidPrice: boolean = true;
+  isValidUsage: boolean = true;
+  isValidDosage: boolean = true;
+  isValidIngredients: boolean = true;
   selectedSpecialization = "";
 
   specializations = ['Специализация 1', 'Специализация 2', 'Специализация 3'];
+  manufacturer: string;
+  name: string;
+  price: string;
+  usage: string;
+  dosage: string;
+  ingredients: string;
+  selectedImage: File;
+
+  imageErrorMessage: string = '';
+  imageErrorColor: string = '#EA455F';
 
   constructor() {
     this.selectedSpecialization = this.specializations[0];
@@ -32,5 +51,55 @@ export class PharmacistPageComponent {
   handleSpecializationClick(specialization: string) {
     this.selectedSpecialization = specialization;
     this.toggleList();
+  }
+
+  onAddReceipt() {
+    if (!this.name) {
+      this.isValidName = false;
+    }
+    if (!this.manufacturer){
+      this.isValidManufacturer = false;
+    }
+    if (!this.price) {
+      this.isValidPrice = false;
+    }
+    if (!this.usage) {
+      this.isValidUsage = false;
+    }
+    if (!this.dosage) {
+      this.isValidDosage = false;
+    }
+    if (!this.ingredients) {
+      this.isValidIngredients = false;
+    }
+  }
+
+  refresh() {
+    this.isValidName = true;
+    this.isValidManufacturer = true;
+    this.isValidPrice = true;
+    this.isValidUsage = true;
+    this.isValidDosage = true;
+    this.isValidIngredients = true;
+  }
+
+  handleImageUpload(event: any) {
+    const file = event.target.files[0];
+    if (file) {
+      const maxSizeInBytes = 5 * 1024 * 1024; // 5 MB
+      if (file.size > maxSizeInBytes) {
+        event.target.value = null;
+        this.imageErrorMessage = 'Размер данного изображения больше 5 Мб';
+        return;
+      }
+
+      const allowedTypes = ['image/png', 'image/jpeg', 'image/jpg'];
+      if (!allowedTypes.includes(file.type)) {
+        this.imageErrorMessage = 'Неподдерживаемый тип изображения';
+        event.target.value = null;
+        return;
+      }
+      this.selectedImage = event.target.files[0];
+    }
   }
 }
