@@ -30,5 +30,3 @@ export class LoginPageComponent {
     }
   }
 }
-
-//Добавь переменную isValid если false тогда подключи стили
