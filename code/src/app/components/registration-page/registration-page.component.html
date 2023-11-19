@@ -1,34 +1,30 @@
-<app-header></app-header>
-
 <div class="registration-page">
+
   <h1 class="registration-page-h1">Регистрация</h1>
   <form>
-    <div class="input-container input-container-margin" [ngClass]="{'error-border': !isValidName}">
+
+    <div class="input-container input-container-margin">
       <label class="search-text">Фамилия Имя Отчество</label>
-      <input (click)="refresh()" class="text-general" type="text" [(ngModel)]="name">
+      <input  class="text-general" type="text">
     </div>
-    <strong *ngIf="!isValidName" class="textErrorColor">{{ nameErrorMessage }}</strong>
 
-    <div class="input-container" [ngClass]="{'error-border': !isValidPhone}">
+    <div class="input-container">
       <label class="search-text">Мобильный телефон</label>
-      <input (click)="refresh()" class="text-general" type="text" [(ngModel)]="phone">
+      <input  class="text-general" type="text">
     </div>
-    <strong *ngIf="!isValidPhone" class="textErrorColor" >{{ phoneErrorMessage }}</strong>
 
-    <div class="input-container" [ngClass]="{'error-border': !isValidPassword}">
+    <div class="input-container">
       <label class="search-text">Пароль</label>
-      <input (click)="refresh()" class="text-general" type="text" [(ngModel)]="password">
+      <input class="text-general" type="text">
     </div>
-    <strong *ngIf="!isValidPassword" class="textErrorColor" >{{ PasswordErrorMessage }}</strong>
 
-    <div class="input-container" [ngClass]="{'error-border': !isValidRepeatPassword}">
+    <div class="input-container">
       <label class="search-text">Повторите пароль</label>
-      <input (click)="refresh()" class="text-general" type="text" [(ngModel)]="repeatPassword">
+      <input class="text-general" type="text">
     </div>
-    <strong *ngIf="!isValidRepeatPassword" class="textErrorColor" >{{ repeatPasswordErrorMessage }}</strong>
 
     <div class="button-padding">
-      <button (click)="register()" class="button-color button-sizes">Зарегистрироваться</button>
+      <button  class="button-color button-sizes">Зарегистрироваться</button>
     </div>
 
   </form>

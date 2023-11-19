@@ -54,9 +54,6 @@ export class PharmacistPageComponent {
   }
 
   onAddReceipt() {
-    console.log('Username:', this.name);
-    console.log('Password:', this.price);
-
     if (!this.name) {
       this.isValidName = false;
     }
