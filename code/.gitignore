@@ -41,11 +41,11 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/src/app/components/cart-page
-/src/app/components/filter
-/src/app/components/login-page
-/src/app/components/main-page
-/src/app/components/pharmacist-page
-/src/app/components/product-card
-/src/app/components/product-page
-/src/app/components/user-page
+src/app/components/cart-page
+src/app/components/filter
+src/app/components/login-page
+src/app/components/main-page
+src/app/components/pharmacist-page
+src/app/components/product-card
+src/app/components/product-page
+src/app/components/user-page
