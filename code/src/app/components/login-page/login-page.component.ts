@@ -20,8 +20,7 @@ export class LoginPageComponent {
       this.isValid = true;
 
       if (this.isValid) {
-        // Navigate to the main page on successful login
-        this.router.navigate(['/main']); // '/main' should be replaced with your actual main page route
+        this.router.navigate(['/main']);
       }
 
     } else {
@@ -30,5 +29,3 @@ export class LoginPageComponent {
     }
   }
 }
-
-//Добавь переменную isValid если false тогда подключи стили
