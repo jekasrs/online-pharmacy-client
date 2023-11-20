@@ -1,0 +1,11 @@
+.button-color.auth-button {
+  width: 110px;
+  margin-right: 0;
+}
+
+.button-color.small-button
+{
+  width: 70px;
+  line-height: 0;
+  margin-right: 21px;
+}

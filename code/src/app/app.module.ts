@@ -15,6 +15,9 @@ import { CartOrderCardComponent } from "./components/cart-page/cart-order-card/c
 import { MainPageComponent} from "./components/main-page/main-page.component";
 import { FormsModule } from "@angular/forms";
 import { ItemComponent } from "./components/main-page/item/item.component";
+import { HeaderAuthorizedComponent } from './components/header/header-authorized/header-authorized.component';
+import { HeaderPharmacistComponent } from './components/header/header-pharmacist/header-pharmacist.component';
+import { HeaderUnauthorizedComponent } from './components/header/header-unauthorized/header-unauthorized.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,7 @@ import { ItemComponent } from "./components/main-page/item/item.component";
     HeaderComponent, CartComponent,
     LoginPageComponent, MainPageComponent,
     PharmacistPageComponent, ItemComponent, RegistrationPageComponent,
-    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent
+    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent, HeaderAuthorizedComponent, HeaderPharmacistComponent, HeaderUnauthorizedComponent
   ],
   imports: [
     BrowserModule,
