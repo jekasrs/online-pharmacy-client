@@ -1,3 +1,9 @@
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
 .button-color.auth-button {
   width: 110px;
   margin-right: 0;

@@ -10,8 +10,6 @@ export class HeaderComponent {
   @Input() user: IUser
   title = 'Header'
   searchRequest: string = ''
-  elseIfPharmacist: any;
-  elseNormal: any;
 
   showItems() {
     return this.searchRequest;
