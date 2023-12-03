@@ -1,12 +1,20 @@
 :host {
   font-family: Futura, sans-serif;
   font-size: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.content {
+  height: 160px;
+    margin-bottom: 50px;
+}
+
+.header {
   display: flex;
   flex-direction: row;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   margin-top: 60px;
   margin-left: 24px;
   margin-right: 24px;
@@ -16,18 +24,13 @@
   color: white;
   align-items: center
 }
-
-p {
-  margin: 0;
-}
-
 .main-icon {
   border: none;
   width: 173px;
   height: 55px;
   background: #61cac4;
   border-radius: 30px;
-  margin-right: 150px;
+  margin-right: 143px;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -1,33 +1,35 @@
-<div class="main-icon">
-  <img
-    class="main-icon logo"
-    src="../assets/buttons/pill-logo.png">
-  <span class="main-icon title">ProPill</span>
-</div>
-<div class="search-bar">
-  <img class="search-icon" alt="search-icon" src="../assets/buttons/search-logo.png"/>
-  <form action="/search">
-    <input placeholder="Поиск по названию препарата, например Витамин D"
-           type="text" name="searchRequest" [(ngModel)]="searchRequest" autocapitalize="off" autocomplete="off"
-           autocorrect="off" spellcheck="false" maxlength="255" class="textarea">
-  </form>
-</div>
-
-<button class="button-color search-button" (click)="showItems()" tabindex="0">Искать</button>
-
-<div *ngIf="user==null else elseBlock;">
-  <app-header-unauthorized></app-header-unauthorized>
-</div>
-<ng-template #elseBlock>
-  <div *ngIf="user.isAdmin; else elseBlock">
-    <app-header-pharmacist></app-header-pharmacist>
-  </div>
-  <ng-template #elseBlock>
-    <div>
-      <app-header-authorized></app-header-authorized>
+<div class="content">
+  <div class="header">
+    <div class="main-icon">
+      <img
+        class="main-icon logo"
+        src="../assets/buttons/pill-logo.png">
+      <span class="main-icon title">ProPill</span>
     </div>
-  </ng-template>
-</ng-template>
-<!--<ng-template #elseBlock>-->
-<!--  <app-header-authorized></app-header-authorized>-->
-<!--</ng-template>-->
+    <div class="search-bar">
+      <img class="search-icon" alt="search-icon" src="../assets/buttons/search-logo.png"/>
+      <form action="/search">
+        <input placeholder="Поиск по названию препарата, например Витамин D"
+               type="text" name="searchRequest" [(ngModel)]="searchRequest" autocapitalize="off" autocomplete="off"
+               autocorrect="off" spellcheck="false" maxlength="255" class="textarea">
+      </form>
+    </div>
+
+    <button class="button-color search-button" (click)="showItems()" tabindex="0">Искать</button>
+
+    <div *ngIf="user==null else elseBlock;">
+      <app-header-unauthorized></app-header-unauthorized>
+    </div>
+    <ng-template #elseBlock>
+      <div *ngIf="user.isAdmin; else elseBlock">
+        <app-header-pharmacist></app-header-pharmacist>
+      </div>
+      <ng-template #elseBlock>
+        <div>
+          <app-header-authorized [onFilter]="this.onFilter"></app-header-authorized>
+        </div>
+      </ng-template>
+    </ng-template>
+  </div>
+  <app-filter *ngIf="onFilter"></app-filter>
+</div>
