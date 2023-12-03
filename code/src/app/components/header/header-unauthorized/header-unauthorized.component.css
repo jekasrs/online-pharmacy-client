@@ -1,9 +1,11 @@
 .button-color.auth-button {
   width: 110px;
   margin-right: 0;
+  font-size: 20px;
 }
 
 .button-color.registration-button {
   width: 165px;
   margin-right: 21px;
+  font-size: 20px;
 }

@@ -14,7 +14,14 @@
 </div>
 
 <button class="button-color search-button" (click)="showItems()" tabindex="0">Искать</button>
-  <app-header-pharmacist></app-header-pharmacist>
-<!--  <app-header-authorized></app-header-authorized>-->
-<!--<app-header-unauthorized></app-header-unauthorized>-->
+<div *ngIf="user==null; else elseIfPharmacist">
+  <app-header-unauthorized></app-header-unauthorized>
+</div>
+<ng-template #elseIfPharmacist *ngIf="user.isAdmin; else elseNormal">
+    <app-header-pharmacist></app-header-pharmacist>
+</ng-template>
+
+<ng-template #elseNormal>
+    <app-header-authorized></app-header-authorized>
+</ng-template>
 
