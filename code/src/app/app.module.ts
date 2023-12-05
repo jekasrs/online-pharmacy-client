@@ -18,6 +18,7 @@ import { ItemComponent } from "./components/main-page/item/item.component";
 import { AccountComponent } from "./components/user-page/account/account.component";
 import {AccountOrderCardComponent} from "./components/user-page/account-order-card/account-order-card.component";
 import { AppRoutingModule } from './routes/routes';
+import { OrderPageComponent } from './components/order-page/order-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { AppRoutingModule } from './routes/routes';
     HeaderComponent, CartComponent, AccountComponent,
     LoginPageComponent, MainPageComponent,
     PharmacistPageComponent, ItemComponent, RegistrationPageComponent,
-    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent, AccountOrderCardComponent
+    ProductCardComponent, CartItemCardComponent, CartOrderCardComponent, AccountOrderCardComponent, OrderPageComponent
   ],
   imports: [
     BrowserModule,
