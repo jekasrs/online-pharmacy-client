@@ -4,7 +4,6 @@ import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
 import {ProductCardComponent} from "../components/product-card/product-card.component";
 import {PharmacistPageComponent} from "../components/pharmacist-page/pharmacist-page.component";
-import {RegistrationPageComponent} from "../components/registration-page/registration-page.component";
 import {CartComponent} from "../components/cart-page/cart.component";
 import {HeaderUnauthorizedComponent} from "../components/header/header-unauthorized/header-unauthorized.component";
 import {RegistrationPageComponent} from "../components/registration-page/registration-page.component";
