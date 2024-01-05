@@ -25,29 +25,38 @@ export class RegistrationPageComponent {
   register() {
     if (!this.name) {
       this.isValidName = false;
-      this.nameErrorMessage = 'Недопустимы все символы, кроме кириллицы';
+      this.nameErrorMessage = 'Допустимы толкько символы кириллицы!';
     }
     if (!this.phone) {
       this.isValidPhone = false;
-      this.phoneErrorMessage = 'Неверный формат +79522795509';
+      this.phoneErrorMessage = 'Неверный формат номера! Например: +79522795509';
     }
     if (!this.password) {
       this.isValidPassword = false;
-      this.PasswordErrorMessage = 'Пароль должен быть не меньше чем 10 символов';
+      this.PasswordErrorMessage = 'Пароль должен быть от 6 до 16 символов! Можно использовать латиницу и цифры от 0 до 9!';
     }
     if (this.password != this.repeatPassword){
       this.isValidRepeatPassword = false;
-      this.repeatPasswordErrorMessage = 'Пароли не совпадают. Проверьте введенные данные.';
+      this.repeatPasswordErrorMessage = 'Пароли не совпадают! Проверьте введенные данные!';
     }
     if (this.isValidName && this.isValidPhone && this.isValidPassword &&  this.isValidRepeatPassword ) {
       this.router.navigate(['/main']);
     }
   }
 
-  refresh() {
+  refresh_name() {
     this.isValidName = true;
+  }
+
+  refresh_phone() {
     this.isValidPhone = true;
+  }
+
+  refresh_password() {
     this.isValidPassword = true;
+  }
+
+  refresh_repeat_password() {
     this.isValidRepeatPassword = true;
   }
 }
