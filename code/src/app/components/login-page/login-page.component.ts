@@ -15,16 +15,11 @@ export class LoginPageComponent {
 
   onLogin() {
     if (this.username && this.password) {
-      console.log('Username:', this.username);
-      console.log('Password:', this.password);
       this.isValid = true;
-
       if (this.isValid) {
         this.router.navigate(['/main']);
       }
-
     } else {
-      console.log('Please enter both username and password.');
       this.isValid = false;
     }
   }
