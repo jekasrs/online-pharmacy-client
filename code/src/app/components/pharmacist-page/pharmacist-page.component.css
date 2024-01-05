@@ -63,19 +63,18 @@ button {
 
 .flex-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .half-width {
-  width: calc(50% - 5px);
+  width: calc(51%);
 }
 
 .right-margin {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .left-margin {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .checkbox-option {
@@ -128,13 +127,7 @@ button {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
-  width: auto;
-}
-
-.upload-image {
-  display: inline-block;
   width: auto;
 }
 
@@ -150,16 +143,14 @@ button {
   margin-bottom: 15px;
 }
 
+.upload-image__img input{
+  display: none;
+}
 .input-image {
   width: 60%;
   height: 60%;
   cursor: pointer;
-}
-
-#image-upload {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  padding-left: 15px;
 }
 
 .specialization__list {
@@ -223,4 +214,8 @@ button {
 
 .img-arrow {
   margin-right: 5px;
+}
+
+.error-border {
+  border-color: #EA455F;
 }
