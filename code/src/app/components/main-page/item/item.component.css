@@ -92,7 +92,7 @@ p {
 .card.pricearea.quatity {
   flex-direction: row;
   margin-bottom: 24px;
-  align-content: center;
+  justify-content: left;
   height: 50px;
 }
 

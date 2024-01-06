@@ -10,4 +10,27 @@ import {IItem} from "../../../models/item";
 export class ItemComponent {
   @Input() item: IItem
   title = 'ItemComponent'
+  quantityIsZero = true
+  quantity = 0
+
+  increaseQuantity() {
+    this.quantity++;
+    this.quantityIsZero = false
+  }
+
+  decreaseQuantity() {
+    if (this.quantity != 0) {
+      this.quantity--;
+    }
+    if (this.quantity == 0)
+    {
+      this.quantityIsZero = true;
+    }
+  }
+
+  addToCart()
+  {
+    this.quantity++;
+    this.quantityIsZero = false;
+  }
 }
