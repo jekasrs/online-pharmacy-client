@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 
 @Component({
   selector: 'app-filter',
@@ -9,7 +9,7 @@ export class FilterComponent {
   title = 'Filter'
   selectedFilter = '';
   filters = ['recipeButton', 'noRecipeButton', 'specialButton'];
-  hasAccess: boolean = false
+  @Input() hasAccess: boolean = false
 
   constructor() {
     this.hasAccess = true
