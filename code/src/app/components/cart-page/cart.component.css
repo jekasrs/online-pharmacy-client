@@ -26,13 +26,20 @@
   border: none;
 }
 
+.content.list {
+  width: 820px;
+  margin-left: 0;
+  margin-right: 35px;
+  flex-direction: column;
+}
+
 .card-container {
   width: 820px;
   display: flex;
   flex-direction: column;
   border: none;
   background: none;
-  margin-right: 35px;
+  /*margin-right: 35px;*/
 }
 
 .spacer {
