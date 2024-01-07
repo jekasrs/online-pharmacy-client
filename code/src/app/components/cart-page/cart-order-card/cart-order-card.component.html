@@ -1,6 +1,6 @@
 <div class="card-order">
   <span class="text title">Ваш заказ</span>
-  <div class="text line">
+  <div *ngIf="hasRecipeOnlyItems" class="text line">
     <form>
         <input class="text" type="checkbox" id="checkbox-id">
         <label for="checkbox-id">

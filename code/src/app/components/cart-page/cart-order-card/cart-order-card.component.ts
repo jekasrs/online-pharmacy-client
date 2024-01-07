@@ -31,4 +31,10 @@ export class CartOrderCardComponent {
     return {id: '', date: '', address: '', deliverDate: '',
       price: this.price, orderNumber: '', items: this.order.items}
   }
+
+  hasRecipeOnlyItems(): boolean {
+    let tmp = false
+    this.data.forEach(item => { if (item.hasRecipe) { tmp = true }})
+    return tmp
+  }
 }
