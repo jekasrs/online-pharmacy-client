@@ -2,7 +2,6 @@ import {Component, Input} from '@angular/core';
 import {IOrder} from "../../../models/order";
 import {IItemQuantuty} from "../../../models/item_quantity";
 import {items} from "../../../data/items";
-import {orders} from "../../../data/orders";
 
 @Component({
   selector: 'app-cart-order-card',
@@ -14,6 +13,14 @@ export class CartOrderCardComponent {
   @Input() order: IOrder
   data: IItemQuantuty[]
   price: number = 0
+  checkboxChecked: boolean
+  hasRecipeItems: boolean = false
+
+  constructor() {
+    window.addEventListener('load', () => {
+      this.hasRecipeOnlyItems();
+    })
+  }
 
   calculatePrice() {
     this.data = this.order.items;
@@ -32,9 +39,31 @@ export class CartOrderCardComponent {
       price: this.price, orderNumber: '', items: this.order.items}
   }
 
-  hasRecipeOnlyItems(): boolean {
-    let tmp = false
-    this.data.forEach(item => { if (item.hasRecipe) { tmp = true }})
-    return tmp
+  hasRecipeOnlyItems() {
+    this.data.forEach(item => {
+      if (item.hasRecipe) {
+        this.hasRecipeItems = true;
+        this.checkboxChecked = false;
+        document.querySelectorAll(".button-color")
+            .forEach(button => {
+              button.classList.add('inactive')
+            })
+        return }})
+  }
+
+  changeOrderButtonColor() {
+    this.checkboxChecked = !this.checkboxChecked;
+    if (this.checkboxChecked) {
+      document.querySelectorAll(".button-color")
+          .forEach(button => {
+            button.classList.remove('inactive')
+          })
+    }
+    else {
+      document.querySelectorAll(".button-color")
+          .forEach(button => {
+            button.classList.add('inactive')
+          })
+    }
   }
 }
