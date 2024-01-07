@@ -3,7 +3,7 @@
   <div class="card textarea">
       <span class="card title">{{ item.title }}</span>
       <span class="card info">Производитель: {{ item.manufacturer }}</span>
-    <p *ngIf="item.recipeOnly" class="card recipeTag">🛈 Рецептурный препарат</p>
+    <p *ngIf="item.recipeOnly" class="card recipeTag">ⓘ Рецептурный препарат</p>
   </div>
   <div class="card pricearea">
     <span *ngIf="quantityIsZero" type="text">Цена: {{ item.cost }}₽</span>
