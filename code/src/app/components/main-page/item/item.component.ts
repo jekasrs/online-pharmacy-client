@@ -19,11 +19,9 @@ export class ItemComponent {
   constructor(private router: Router) {
   }
 
-
   increaseQuantity() {
     this.quantity++;
     this.quantityIsZero = false
-    this.updateItemQuantity()
   }
 
   decreaseQuantity() {
@@ -34,24 +32,15 @@ export class ItemComponent {
     {
       this.quantityIsZero = true;
     }
-    this.updateItemQuantity()
   }
 
   addToCart()
   {
-    this.quantity++;
     this.quantityIsZero = false;
-    this.itemQuantity = {
-      itemId: this.item.id,
-      itemQuantity: this.quantity
-    }
+    this.itemQuantity = {itemId: this.item.id, itemQuantity: this.quantity}
   }
 
-  updateItemQuantity() {
-    this.itemQuantity.itemQuantity = this.quantity
-    }
-
   onProductCardPage() {
-    this.router.navigate(["./product-page", {itemData: this.itemQuantity}])
+    this.router.navigate(["./product-page"])
   }
 }

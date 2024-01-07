@@ -89,6 +89,10 @@ p {
   margin: 10px 0;
 }
 
+.card.buy-button:active {
+    transform: scale(0.98,0.98);
+}
+
 .card.pricearea.quatity {
   flex-direction: row;
   margin-bottom: 24px;
