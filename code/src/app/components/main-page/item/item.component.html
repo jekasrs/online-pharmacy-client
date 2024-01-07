@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" (click)="onProductCardPage()">
   <img class="card img" src="/assets/pictures/instead-of-photo-img.png">
   <div class="card textarea">
       <span class="card title">{{ item.title }}</span>
@@ -8,7 +8,6 @@
   <div class="card pricearea">
     <span *ngIf="quantityIsZero" type="text">Цена: {{ item.cost }}₽</span>
     <button *ngIf="quantityIsZero" class="card buy-button" (click)="addToCart()">Купить</button>
-    <!-- эта часть будет отображаться после настройки работы кнопки "купить" -->
     <div *ngIf="!quantityIsZero" class="card pricearea quatity">
       <button class="card card-small" (click)="decreaseQuantity()">–</button>
       <span class="text quatity" >{{ quantity }}</span>
